@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("ZOZmHl5ph4djkqLv7");
+  emailjs.init("g1sh8BVUiTmX_4QTd");
 })();
 
 $("#sendMail").click(function (e) {
@@ -52,9 +52,10 @@ $("#sendMail").click(function (e) {
     message: message,
   };
 
-  emailjs.send("service_q4j372f", "template_xs6lgif", templateParams)
+  emailjs.send("service_x7ibptm", "template_7syasta", templateParams)
     .then(function () {
       alert("✅ Message sent successfully!");
+      $("#name, #phone, #email, #subject, #message").val("");
     }, function (error) {
       console.error(error);
       alert("❌ Failed to send message. Please try again.");
